@@ -1,1 +1,10 @@
 GET http://127.0.0.1:8000/todos
+
+### Todo作成
+POST http://127.0.0.1:8000/todos
+Content-Type: application/json
+
+{
+  "title": "todo1",
+  "description": "todo1 description"
+}
