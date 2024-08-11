@@ -1,0 +1,6 @@
+POST http://127.0.0.1:8000/stamprally
+Content-Type: application/json
+{
+  "title":"test1",
+  "description": "test2"
+}

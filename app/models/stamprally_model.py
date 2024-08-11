@@ -3,6 +3,7 @@ from sqlalchemy import Boolean, Column, Integer, String, DateTime
 
 class StampRally(Base):
   __tablename__ = "stamp_rally"
+  # __table_args__ = {'extend_exsisting': True} 同じのを作るとでるえらー
 
   id = Column(Integer, primary_key=True, index=True)
   title = Column(String, index=True)
