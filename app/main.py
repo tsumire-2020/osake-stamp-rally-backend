@@ -6,6 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from app.api.todo_api import todo_router
 from app.api.stamprally_api import stamprally_router
 from app.api.alcohol_api import alcohol_router
+from app.api.user_api import user_router
 
 
 # アプリケーションの設定
@@ -15,6 +16,7 @@ api_router = APIRouter()
 api_router.include_router(todo_router)
 api_router.include_router(stamprally_router)
 api_router.include_router(alcohol_router)
+api_router.include_router(user_router)
 
 app.include_router(api_router)
 

@@ -23,6 +23,7 @@ target_metadata = Base.metadata
 from app.models.todo_model import Todo
 from app.models.stamprally_model import StampRally, Stamp,StampResult
 from app.models.alcohol_model import Alcohol
+from app.models.user_model import User
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
